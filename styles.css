@@ -1,0 +1,101 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background color */
+    color: #fff; /* White text color */
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 100px; /* Adjust logo size */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allows the search input to expand */
+    margin-right: 1rem; /* Space between search bar and buttons */
+}
+
+#searchBar {
+    padding: 0.5rem;
+    width: 80%; /* Reduced width of the search bar */
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #555;
+}
+
+#searchButton {
+    background-color: #555; /* Darker background for search button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 1rem; /* Space between login button and avatar */
+}
+
+/* Specific styles for sidebar and header */
+.bg-dark {
+    /* Bootstrap dark background */
+    background-color:black!important;
+}
+
+.text-light {
+    color: #fff !important; /* White text for light color */
+}
+
+.nav-link {
+    color:white !important; /* Lighter text color for nav links */
+}
+
+.nav-link.active {
+    font-weight: bold; /* Bold active nav link */
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    text-align: left; /* Align text to the left */
+    padding: 1rem;
+    color: #fff; /* White text for menu items */
+    cursor: pointer; /* Pointer cursor on menu items */
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: row !important;
+    }
+    .nav-link {
+        margin-right: 10px !important;
+    }
+    .ml-auto {
+        margin-left: auto !important;
+    }
+}
